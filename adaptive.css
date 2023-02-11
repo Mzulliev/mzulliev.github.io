@@ -1,0 +1,58 @@
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    header ul, footer .contacts-bottom-text {
+        font-size: 16px;
+    }
+    #about-me .about-me-text, #skills .skill {
+        font-size: 18px;
+    }
+    
+    footer .socials {
+        -ms-flex-preferred-size: 20%;
+            flex-basis: 20%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    h2 {
+        font-size: 32px;
+    }
+    header #logo, 
+    #main .name {
+        font-size: 36px;
+    }
+    header ul, 
+    header .swith-language a {
+        font-size: 12px;
+    }
+    #main {
+        padding: 120px 0 70px 0;
+    }
+    #main .profession-text {
+        font-size: 18px;
+    }
+    #main .info-text {
+        font-size: 16px;
+    }
+    #about-me, 
+    #skills, 
+    #portfolio, 
+    footer {
+        padding: 70px 0 90px 0;
+    }
+    #about-me .about-me-text {
+        font-size: 18px;
+    }
+    #skills .skill {
+        font-size: 16px;
+    }
+    #skills .skill svg {
+        width: 50px;
+    }
+    footer .contacts-btn, 
+    footer .contacts-bottom-title, 
+    footer .contacts-bottom-text {
+        font-size: 16px;
+    }
+    footer .socials {
+        flex-basis: 20%;
+    }
+}

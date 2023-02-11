@@ -30,14 +30,21 @@ body {
 header {
     padding: 20px 0 30px 0;
     background-color: #112D3265;
-    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
     position: fixed;
     width: 100%;
 }
 header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     
 }
 header #logo {
@@ -46,11 +53,16 @@ header #logo {
     font-weight: 700;
 }
 header nav {
-    flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
 }
 header ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     font-size: 18px;
     font-weight: 600;
 }
@@ -61,6 +73,8 @@ header ul a {
 header ul a:hover {
     color: #4F4A41;
     border-bottom: 3px solid #4F4A41;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 }
 header .swith-language a{
@@ -71,15 +85,23 @@ header .swith-language a{
 }
 header .swith-language a:hover {
     color: #4F4A41;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 #main {
     padding: 170px 0 100px 0;
 }
 #main .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 #main .mz-photo {
     width: 40%;
@@ -105,8 +127,13 @@ header .swith-language a:hover {
     background-color:#0f313c;
 }
 #about-me .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
 }
 .about-me-title {
@@ -122,7 +149,7 @@ header .swith-language a:hover {
     margin-bottom: 25px;   
 }
 #skills {
-    padding: 110px 120px;
+    padding: 110px 0 120px 0;
 }
 #skills .container {
     text-align: center;
@@ -132,8 +159,12 @@ header .swith-language a:hover {
     margin-bottom: 60px;
 }
 #skills .my-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 #skills .skill {
     font-size: 22px;
@@ -163,9 +194,16 @@ header .swith-language a:hover {
     text-align: center;
 }
 #portfolio .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 #portfolio .project {
     background-repeat: no-repeat;
@@ -187,12 +225,19 @@ header .swith-language a:hover {
 }
 
 footer {
-    padding: 110px 150px;
+    padding: 90px 0 95px 0;
 }
 footer .container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 footer .contacts-title {
     margin-bottom: 50px;
@@ -208,29 +253,48 @@ footer .contacts-btn {
     padding: 15px 45px;
     border-radius: 50px;
     font-size: 18px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 footer .contacts-btn:hover {
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 }
 footer .contacts-bottom {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 50px;
     padding: 20px 0 20px;
 }
 footer .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-basis: 17%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 footer .social-icon:hover {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition:  .4s;
+    -o-transition:  .4s;
     transition:  .4s;
 }
 footer .social-icon {
+    -webkit-transition: .4s;
+    -o-transition: .4s;
     transition: .4s;
 }
 footer .social-icon svg{
