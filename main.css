@@ -101,7 +101,7 @@ header .swith-language a:hover {
     font-size: 18px;
 }
 #about-me {
-    padding: 80px 0 90px 0;
+    padding: 110px 0 120px 0;
     background-color:#0f313c;
 }
 #about-me .container {
@@ -122,7 +122,7 @@ header .swith-language a:hover {
     margin-bottom: 25px;   
 }
 #skills {
-    padding: 60px 90px;
+    padding: 110px 120px;
 }
 #skills .container {
     text-align: center;
@@ -152,7 +152,7 @@ header .swith-language a:hover {
 }
 
 #portfolio {
-    padding: 80px 0 140px 0;
+    padding: 110px 0 150px 0;
     background-color:#0f313c;
 }
 #position .container {
@@ -187,7 +187,7 @@ header .swith-language a:hover {
 }
 
 footer {
-    padding: 100px 150px;
+    padding: 110px 150px;
 }
 footer .container{
     display: flex;
