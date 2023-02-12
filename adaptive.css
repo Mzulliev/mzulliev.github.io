@@ -1,4 +1,7 @@
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    header {
+        padding: 15px 0;
+    }
     header ul, footer .contacts-bottom-text {
         font-size: 16px;
     }
@@ -12,6 +15,9 @@
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    header {
+        padding: 10px 0;
+    }
     h2 {
         font-size: 32px;
     }
@@ -54,5 +60,215 @@
     }
     footer .socials {
         flex-basis: 20%;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    header {
+        padding: 10px 0 10px;
+    }
+    header nav ul, .swith-language {
+        display: none;
+    }
+    header .burger {
+        display: block;
+    }
+    header .avtive-list {
+        display: block;
+    }
+    header .list-active {
+        display: block;
+    }
+    #main {
+        padding: 130px 0 90px 0;
+    }
+    #main .mz-photo {
+        width: 45%;
+    }
+    #main .name {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    #main .info-text {
+        margin-top: 10px;
+    }
+    #main .profession-text, #main .info-text {
+        font-size: 14px;
+    }
+    #about-me, #skills, #portfolio {
+        padding: 90px 0 90px 0;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    #about-me .about-me-text {
+        font-size: 16px;
+        width: 90%;
+    }
+    #skills .skill {
+        font-size: 12px;
+        /* margin-bottom: 20px; */
+    }
+    #skills .skill-icon svg {
+        width: 36px;
+    }
+    #portfolio .project-text {
+        font-size: 16px;
+    }
+    #portfolio .project {
+        width: 100%;
+        padding-top: 65%;
+    }
+    #portfolio .project:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    footer .contacts-title {
+        margin-bottom: 35px;
+    }
+    footer .contacts-text {
+        font-size: 16px;
+        margin-bottom: 45px;
+    }
+    footer .contacts-btn {
+        font-size: 16px;
+    }
+    footer .contacts-bottom-title {
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+    footer .contacts-bottom-text {
+        font-size: 14px;
+    }
+    footer .social-icon svg {
+        width: 25px;
+    }
+    footer .socials {
+        display: block;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    header #logo {
+        font-size: 25px;
+    }
+    header ul {
+        display: none;
+    }
+    .swith-language {
+        display: none;
+    }
+    header .burger {
+        display: block;
+    }
+    header .avtive-list {
+        display: block;
+    }
+    header .list-active {
+        display: block;
+    }
+    .list-active {
+        top: 60px;
+        font-size: 26px;
+    }
+    #main {
+        padding: 100px 0 40px 0;
+    }
+    #main .container {
+        flex-direction: column;
+    }
+    #main .mz-photo {
+        width: 60%;
+        margin-bottom: 30px;
+    }
+    #main .person-info {
+        text-align: center;
+        width: 70%;
+    }
+    #main .name {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    #main .profession-text {
+        font-size: 14px;
+    }
+    #main .info-text {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    #about-me, #skills, #portfolio, footer {
+        padding: 40px 0;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .about-me-title {
+        margin-bottom: 25px;
+    }
+    #about-me .about-me-text {
+        width: 100%;
+        font-size: 12px;
+    }
+    #skills .skills-text {
+        margin-top: 25px;
+        margin-bottom: 35px;
+        font-size: 14px;
+    }
+    #skills .my-skills {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+    #skills .skill {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    #skills .skill-icon {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    #skills .skill-icon svg{
+        width: 40px;
+    }
+    #portfolio .project {
+        width: 100%;
+        padding-top: 65%;
+    }
+    #portfolio .portfolio-title {
+        margin-bottom: 10px;
+    }
+    #portfolio .project-text {
+        font-size: 12px;
+    }
+    #portfolio .project:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    footer .contacts-title {
+        margin-bottom: 15px;
+    }
+    footer .contacts-text {
+        font-size: 14px;
+        width: 280px;    
+    }
+    footer .contacts-btn {
+        font-size: 12px;
+    }
+    footer .contacts-bottom-title {
+        font-size: 12px;
+    }
+    footer .contacts-bottom-text {
+        font-size: 12px;
+    }
+    footer .social-icon svg {
+        width: 20px;
+    }
+    footer .socials {
+        display: block;
+    }
+    footer .contacts-bottom {
+        flex-flow: column wrap;
+    }
+    footer .contacts-bottom .email, .phone {
+        margin-bottom: 10px;
+    }
+    footer .contacts-bottom-title {
+        margin-bottom: 0;
     }
 }

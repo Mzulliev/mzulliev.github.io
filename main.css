@@ -55,7 +55,63 @@ header #logo {
 header nav {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    position: relative;
 }
+header .burger {
+    right: 0;
+    display: none;
+}
+header .burger span{
+    width: 25px;
+    height: 4px;
+    /* transform: translate(-50%, -50%); */
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+header .burger span::before,
+header .burger span::after {
+    content: "";
+    width: 25px;
+    height: 4px;
+    position: absolute;
+    background: #fff;
+}
+header .burger span::before {
+    top: -8px;
+}
+header .burger span::after {
+    top: 8px;
+}
+.header-active {
+    padding-bottom: 380px;
+}
+.list-active {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 200%;
+    margin-left: -10%;
+    font-size: 32px;
+}
+.list-active li:not(:last-child) {
+    margin-bottom: 20px;
+}
+header .burger-active span {
+    transform: rotate(45deg);
+    transition: .4s;
+}
+header .burger-active span::before {
+    display: none;
+}
+header .burger-active span::after {
+    transform: rotate(-90deg);
+    top: 0;
+    
+}
+
+
 header ul{
     display: -webkit-box;
     display: -ms-flexbox;
