@@ -1,3 +1,59 @@
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    header .burger {
+        right: 0;
+        display: none;
+    }
+    header .burger span{
+        width: 25px;
+        height: 4px;
+        /* transform: translate(-50%, -50%); */
+        background: #fff;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+    }
+    header .burger span::before,
+    header .burger span::after {
+        content: "";
+        width: 25px;
+        height: 4px;
+        position: absolute;
+        background: #fff;
+    }
+    header .burger span::before {
+        top: -8px;
+    }
+    header .burger span::after {
+        top: 8px;
+    }
+    .header-active {
+        padding-bottom: 380px;
+    }
+    .list-active {
+        position: absolute;
+        right: 0;
+        top: 70px;
+        width: 200%;
+        margin-left: -10%;
+        font-size: 32px;
+    }
+    .list-active li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    header .burger-active span {
+        transform: rotate(45deg);
+        transition: .4s;
+    }
+    header .burger-active span::before {
+        display: none;
+    }
+    header .burger-active span::after {
+        transform: rotate(-90deg);
+        top: 0;
+        
+    }
+    
+}
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
     header {
         padding: 15px 0;
@@ -66,8 +122,13 @@
     header {
         padding: 10px 0 10px;
     }
-    header nav ul, .swith-language {
+    header nav ul {
         display: none;
+    }
+    .swith-language {
+        position: absolute;
+        left: 225px;
+        padding-top: 10px;
     }
     header .burger {
         display: block;
@@ -139,7 +200,7 @@
         font-size: 14px;
     }
     footer .social-icon svg {
-        width: 25px;
+        width: 35px;
     }
     footer .socials {
         display: block;
@@ -153,7 +214,9 @@
         display: none;
     }
     .swith-language {
-        display: none;
+        position: absolute;
+        left: 140px;
+        padding-top: 5px;
     }
     header .burger {
         display: block;
@@ -257,7 +320,7 @@
         font-size: 12px;
     }
     footer .social-icon svg {
-        width: 20px;
+        width: 30px;
     }
     footer .socials {
         display: block;
