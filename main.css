@@ -57,9 +57,6 @@ header nav {
         flex-basis: 50%;
     position: relative;
 }
-
-
-
 header ul{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -227,7 +224,10 @@ header .swith-language a:hover {
 #portfolio .project-plant-shop {
     background-image: url('img/plant_shop_img/plant_shop_desktop.png');
 }
-
+#portfolio .project-webovio {
+    background-image: url('img/webovio/webovio.png');
+}
+ 
 footer {
     padding: 90px 0 95px 0;
 }

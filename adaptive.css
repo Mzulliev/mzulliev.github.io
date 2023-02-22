@@ -6,7 +6,6 @@
     header .burger span{
         width: 25px;
         height: 4px;
-        /* transform: translate(-50%, -50%); */
         background: #fff;
         display: inline-block;
         position: absolute;
@@ -41,14 +40,20 @@
         margin-bottom: 20px;
     }
     header .burger-active span {
-        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+        -webkit-transition: .4s;
+        -o-transition: .4s;
         transition: .4s;
     }
     header .burger-active span::before {
         display: none;
     }
     header .burger-active span::after {
-        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+                transform: rotate(-90deg);
         top: 0;
         
     }
@@ -115,7 +120,8 @@
         font-size: 16px;
     }
     footer .socials {
-        flex-basis: 20%;
+        -ms-flex-preferred-size: 20%;
+            flex-basis: 20%;
     }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -235,7 +241,10 @@
         padding: 100px 0 40px 0;
     }
     #main .container {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     #main .mz-photo {
         width: 60%;
@@ -275,9 +284,12 @@
         font-size: 14px;
     }
     #skills .my-skills {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
     #skills .skill {
         font-size: 14px;
@@ -326,7 +338,10 @@
         display: block;
     }
     footer .contacts-bottom {
-        flex-flow: column wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
     }
     footer .contacts-bottom .email, .phone {
         margin-bottom: 10px;
