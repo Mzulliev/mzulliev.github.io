@@ -219,13 +219,16 @@ header .swith-language a:hover {
     font-size: 18px;
 }
 #portfolio .project-den-nov {
-    background-image: url('img/denis_nov_img/den_nov_desktop.png');
+    background-image: url('img/den_nov_desktop.jpg');
 }
 #portfolio .project-plant-shop {
-    background-image: url('img/plant_shop_img/plant_shop_desktop.png');
+    background-image: url('img/plant_shop_desktop.jpg');
 }
 #portfolio .project-webovio {
-    background-image: url('img/webovio/webovio.png');
+    background-image: url('img/webovio.jpg');
+}
+#portfolio .project-todo-list {
+    background-image: url('img/todo_list.jpg');
 }
 
 footer {
